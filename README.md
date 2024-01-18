@@ -9,7 +9,8 @@ Este proyecto utiliza la biblioteca Tabula en Python para extraer tablas de los 
      pip install pandas tabula-py
     ```
 
-**2. Asegúrate de tener Java instalado, ya que Tabula utiliza la biblioteca Apache PDFBox que requiere Java.**
+> [!IMPORTANT]
+>**2. Asegúrate de tener Java instalado, ya que Tabula utiliza la biblioteca Apache PDFBox que requiere Java.**
 
 **3. Descarga el archivo PDF de los Estados Financieros de Apple Inc. y actualiza la variable pdf_path en el script con la ruta correcta del archivo.**
 
