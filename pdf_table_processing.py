@@ -1,5 +1,6 @@
 import tabula
 import pandas as pd
+import os
 
 pdf_path = "FY23_Q4_Consolidated_Financial_Statements.pdf"
 
@@ -55,3 +56,6 @@ if not os.path.exists(output_folder):
 for i, df in enumerate(pandas_tables):
     nombre_archivo = f"{output_folder}/tabla_apple{i + 1}.csv"
     df.to_csv(nombre_archivo, index=False)
+
+
+    print(f"DataFrame {i + 1} convertido a CSV: {nombre_archivo}")
