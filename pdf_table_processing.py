@@ -46,9 +46,12 @@ for i in range(len(pandas_tables)):
     pandas_tables[i].columns = columnas_nombres[i]
     
 
-# Convertir cada DataFrame a archivos CSV
-for i, df in enumerate(pandas_tables):
-    nombre_archivo = f"tabla_apple{i + 1}.csv"
-    df.to_csv(nombre_archivo, index=False)
+# Crear la carpeta 'outputs' si no existe
+output_folder = 'outputs'
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 
-    print(f"DataFrame {i + 1} convertido a CSV: {nombre_archivo}")
+# Convertir cada DataFrame a archivos CSV en la carpeta 'outputs'
+for i, df in enumerate(pandas_tables):
+    nombre_archivo = f"{output_folder}/tabla_apple{i + 1}.csv"
+    df.to_csv(nombre_archivo, index=False)
