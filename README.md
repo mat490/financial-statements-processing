@@ -26,4 +26,4 @@ Ejecuta el script extract_financial_data.py para iniciar el procesamiento de los
 Los DataFrames resultantes se almacenan en archivos CSV en la carpeta outputs/. Cada archivo CSV corresponde a una parte específica de los Estados Financieros.
 
 > [!CAUTION]
-> Estea versión del programa está diseñada para trabajar especificamente con el PDF proporcionado, si desea utilizar otro estado financiero debera modificar el código de la linea 16 en adelante.
+> Esta versión del programa está diseñada para trabajar especificamente con el PDF proporcionado, si desea utilizar otro estado financiero debera modificar el código de la linea 16 en adelante.
